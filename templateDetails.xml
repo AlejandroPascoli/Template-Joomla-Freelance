@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+
+<extension version="3.4" type="template" client="site" method="upgrade">
+	
+	<name>Joomla Freelance</name><!-- name the template -->
+	<creationDate>2015-03-28</creationDate><!-- the date your are beginn to code -->
+	<author>Alejandro Pascoli</author><!-- your name (oops, I repeat myself) -->
+	<copyright>Copyright © 2015 Zonasitio.com</copyright><!-- for who you are coding -->
+	<authorEmail>info@zonasitio.com</authorEmail><!-- your email address -->
+	<authorUrl>http://www.zonasitio.com</authorUrl><!-- your url -->
+	<version>1.0.0</version><!-- give your template a number -->
+	<description><![CDATA[ 
+		<h1>Joomla Freelace for Joomla</h1>
+		<p>Created by <a href="http://www.zonasitio.com" target="_blank">Alejandro Pascoli | zonasitio.com</a>.</p>
+		<p>Based on <a href="http://startbootstrap.com/template-overviews/Freelance/" target="_blank">Start Bootstrap | startbootstrap.com/template-overviews/freelance/</a>.</p>
+	]]></description><!-- change the description as you like -->
+	
+	<files><!-- no need to change -->
+		<folder>css</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>index.php</filename>
+		<filename>offline.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+	
+	<positions><!-- posiciones de modulos -->
+		<position>top</position>
+		<position>navbar</position>
+		<position>breadcrumbs</position>
+		<position>slide</position>
+		<position>slogan</position>
+		<position>sidebar</position>
+		<position>bottom</position>
+		<position>debug</position>
+
+		<!-- posiciones ocultas grid gk5 -->
+
+		<position>grid1</position>
+		<position>grid2</position>
+		<position>grid3</position>
+		<position>grid4</position>
+		<position>grid5</position>
+		<position>grid6</position>
+		<position>grid7</position>
+		<position>grid8</position>
+		<position>grid9</position>
+		<position>grid10</position>
+		<position>grid11</position>
+		<position>grid12</position>
+		<position>grid13</position>
+		<position>grid14</position>
+		<position>grid15</position>
+		<position>grid16</position>
+		<position>grid17</position>
+		<position>grid18</position>
+		<position>grid19</position>
+		<position>grid20</position>
+		<position>grid21</position>
+		<position>grid22</position>
+		<position>grid23</position>
+		<position>grid24</position>
+		<position>grid25</position>
+		<position>grid26</position>
+		<position>grid27</position>
+		<position>grid28</position>
+		<position>grid29</position>
+		<position>grid30</position>
+	</positions>
+	
+</extension>
