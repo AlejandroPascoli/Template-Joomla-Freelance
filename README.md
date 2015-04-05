@@ -14,10 +14,15 @@ Have a bug or an issue with this theme? [Open a new issue](https://github.com/Ir
 
 ## Creator
 
-Joomla Freelance for Joomla was created by and is maintained by **Alejandro Pascoli**, owner at [Ing. Pascoli Alejandro](http://www.zonasitio.com/).
+Joomla Freelance for Joomla was created by and is maintained by **Alejandro Pascoli**, owner at [Pascoli Alejandro](http://www.zonasitio.com/).
 
 Joomla freelance for Joomla is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
 
 ## Copyright and License
 
-Copyright 2015 Alejandro Pascoli. Code released under the [Apache 2.0] license.
+Copyright 2015 Alejandro Pascoli. Code released under the [Apache 2.0](https://github.com/AlejandroPascoli/Template-Joomla-Freelance/blob/master/LICENSE) license.
+
+<h4>Atención: esta versión es (beta)</h4>
+<p>Especial Agradecimiento a:</p>
+[Bootstrap](http://getbootstrap.com/)<br>
+[Dr. Menzel IT](http://www.dr-menzel-it.de/)<br>
