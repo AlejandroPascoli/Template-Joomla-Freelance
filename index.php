@@ -109,6 +109,15 @@ $doc->addStyleSheet($tpath . '/css/freelancer.css');
         </div>
         <?php endif; ?>
 
+        <div class="container">
+                    <?php  if($this->countModules('breadcrumbs')) : ?>
+                    <div id="breadcrumbs">        
+                    <div class="row">
+                    <jdoc:include type="modules" name="breadcrumbs" style="block" />
+                </div>
+            </div>
+        <?php  endif; ?>
+
         <div class="row">
             <div class="box">
                 <!-- content -->
