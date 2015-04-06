@@ -474,3 +474,243 @@ footer .footer-below {
     background-color: #ECF0F1;
     border-radius: 15px;
 }
+.nav-pills > li {
+    margin-top: 8px;
+}
+.page-header {
+      margin: -16px 0 21px;
+}
+h1 {    
+    font-size: 1.5em;
+}
+.tagspopular ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.tagspopular ul li {
+    margin: 0.5em 0;
+    padding: 0;
+}
+.tagspopular li a {
+    background: #18BC9C;
+    padding: 0.25em 0.5em;
+    color: white;
+    border-radius: 0.25em;
+
+}
+.tagspopular li a[href]:hover,
+.tagspopular li a[href]:focus {
+  background-color: #17413C;
+}
+ul.category-module {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+ul li.category-module {
+    margin: 0.5em 0;
+    padding: 0;
+}
+li a.mod-articles-category-title  {
+    background: #18BC9C;
+    padding: 0em 1.25em;
+    color: white;
+    border-radius: 1.25em;
+}
+
+li a.mod-articles-category-title[href]:hover,
+li a.mod-articles-category-title[href]:focus {
+  background-color: #0A7963;
+}
+ul.tags.inline {
+    margin: 0;
+    margin-bottom: 2px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+.label-info {
+  background-color: #18BC9C;
+}
+.label-info[href]:hover,
+.label-info[href]:focus {
+  background-color: #0A7963;
+}
+ul.unstyled {
+    list-style-type: none;
+}
+ul li.unstyled {
+    margin: 0.5em 0;
+    padding: 0;
+}
+li a.unstyled  {
+    background: #18BC9C;
+    padding: 0em 1.25em;
+    color: white;
+    border-radius: 0.25em;
+}
+
+.wrapper{
+  width:300px; 
+  margin:12% auto;
+}
+ 
+form {position:relative;}
+ 
+.clear {clear:both;}
+.sign-in {
+  float:left; 
+  color:white;
+  font-size:1.3em;
+}
+.button {
+  float:right;
+  color:#7f8084;
+  border:1px solid $border;
+  padding:7px 15px;
+  border-radius:3px;
+  font-size:0.8em;
+  cursor:pointer; 
+}
+.button:hover {color:#d3d3d3}
+.lock {
+  position:absolute;
+  width:30px;
+  height:30px;
+  margin-top:10px;
+  padding:7px; 
+  left:5px;
+  &::after {
+    content:""; 
+    width:1px;
+    height:30px;
+    position:absolute;
+    background:$border; 
+    top:0px; 
+    left:100%; 
+  }
+}
+.user {
+ 
+  position:absolute;
+  width:30px;
+  height:30px;
+  margin-top:10px;
+  padding:7px;
+  left:5px;
+  &::after {
+    content:""; 
+    width:1px;
+    height:30px;
+    position:absolute;
+    background:$border; 
+    top:0px; 
+    left:100%; 
+  }
+}
+ 
+input {
+  width:100%;
+  padding:5px;
+  height:40px;
+  border-radius:3px;
+  margin:5px 0;
+  outline: none;
+}
+input[type="text"]:focus, input[type="password"]:focus {
+  border:1px solid white;
+  box-shadow:none;
+}
+.user-input:focus .user{
+  background:white !important;
+   
+} 
+ 
+ 
+input[type="text"]{
+  background:#8F969B; 
+  border:2px solid $border;
+  padding-left:45px;
+  color:$button;
+}
+input[type="password"]{
+  background:#8F969B; 
+  border:2px solid $border;
+  padding-left:45px;
+  color:$button;
+}
+input[type="submit"]{
+  background:$button; 
+  border:none;
+  color:white;
+  text-align:center;
+  font-size:0.8em;
+  cursor:pointer;
+}
+ 
+input[type="radio"]{
+  display:none; 
+}
+.radio-check {
+  width:50px;
+  height:20px;
+  border:1px solid $border;
+  border-radius:30px;
+  margin-top:10px;
+  float:left;
+  text-align:center;
+  padding:4px 0;
+  color:$button;
+  font-size:0.65em;
+  position:relative;
+  label{
+    margin:0 2px;
+    cursor:pointer;
+  }
+  .switch-selection{
+    display: block;
+    position: absolute;
+    width:11px;
+    height:11px; 
+    border-radius:50%;
+    background:#8F969B;
+    margin-top:-11px;
+    margin-left:11px; 
+    transition: 0.2s ease-out;
+  } 
+  
+}
+.validate-email  {
+    background-color: #8F969B;
+    padding-left: 45px;
+}
+ 
+ .radio-yes:checked ~ .switch-selection{
+    margin-left:25px !important;
+  } 
+  
+ 
+.check-label {
+  font-size:0.8em;
+  color:#7f8084;
+  margin-top:10px;
+  float:left;
+  padding:3px 0;
+  margin-left:10px;
+}
+ 
+ 
+.forgot-label {
+  font-size:0.8em;
+  color:#7f8084;
+  margin-top:10px;
+  float:right;
+  padding:3px 0;
+  cursor:pointer;
+}
