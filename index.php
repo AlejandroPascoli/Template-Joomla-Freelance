@@ -9,11 +9,11 @@
 defined('_JEXEC') or die;
 // columns
 if ($this->countModules('sidebar') != 0) {
-    $col1  = "9";
-    $col2  = "3";
+    $col1 = "9";
+    $col2 = "3";
 }
 if ($this->countModules('sidebar') == 0) {
-    $col1  = "12";
+    $col1 = "12";
 }
 // variables
 $app            = JFactory::getApplication();
@@ -42,14 +42,24 @@ $doc->addStyleSheet($tpath . '/css/freelancer.css');
 
 ?>
 <!doctype html>
-<html lang="<?php echo $this->language; ?>">
+<html lang="<?php
+echo $this->language;
+?>">
 <head>
     <jdoc:include type="head" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon-precomposed" href="<?php echo $tpath; ?>/images/apple-touch-icon-57x57-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo $tpath; ?>/images/apple-touch-icon-72x72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo $tpath; ?>/images/apple-touch-icon-114x114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo $tpath; ?>/images/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="<?php
+echo $tpath;
+?>/images/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php
+echo $tpath;
+?>/images/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php
+echo $tpath;
+?>/images/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php
+echo $tpath;
+?>/images/apple-touch-icon-144x144-precomposed.png">
     <!-- Fonts -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
@@ -61,11 +71,17 @@ $doc->addStyleSheet($tpath . '/css/freelancer.css');
     <![endif]-->
 </head>
 
-<body class="<?php echo (($menu->getActive() == $menu->getDefault()) ? ('front') : ('page')) . ' ' . $active->alias . ' ' . $pageclass; ?>">
+<body class="<?php
+echo (($menu->getActive() == $menu->getDefault()) ? ('front') : ('page')) . ' ' . $active->alias . ' ' . $pageclass;
+?>">
     
-    <?php if ($this->countModules('top')): ?>
+    <?php
+if ($this->countModules('top')):
+?>
      <div class="address-bar"><jdoc:include type="modules" name="top" style="xhtml" /></div>
-    <?php endif; ?>
+    <?php
+endif;
+?>
 <!-- Navigation -->
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
@@ -78,7 +94,13 @@ $doc->addStyleSheet($tpath . '/css/freelancer.css');
                     <span class="icon-bar"></span>
                 </button>
                 <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand" href="<?php echo $this->baseurl; ?>/" title="<?php echo $app->getCfg('sitename'); ?>"><?php echo $app->getCfg('sitename'); ?></a>
+                <a class="navbar-brand" href="<?php
+echo $this->baseurl;
+?>/" title="<?php
+echo $app->getCfg('sitename');
+?>"><?php
+echo $app->getCfg('sitename');
+?></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -90,72 +112,116 @@ $doc->addStyleSheet($tpath . '/css/freelancer.css');
     </nav>
 
     <div class="container">
-        <?php if ($this->countModules('slide') || $this->countModules('slogan')): ?>
+        <?php
+if ($this->countModules('slide') || $this->countModules('slogan')):
+?>
         <div class="row">
             <div class="box">
                 <div class="col-lg-12 text-center">
-                    <?php if ($this->countModules('slide')): ?>
+                    <?php
+    if ($this->countModules('slide')):
+?>
                     <!-- SLIDESHOW -->
                     <div id="carousel-example-generic" class="carousel slide">
                         <jdoc:include type="modules" name="slide" style="xhtml" />
                     </div>
-                    <?php endif; ?>
-                    <?php if ($this->countModules('slogan')): ?>
+                    <?php
+    endif;
+?>
+                    <?php
+    if ($this->countModules('slogan')):
+?>
                     <!-- SLOGAN -->
                     <jdoc:include type="modules" name="slogan" style="xhtml" />
-                    <?php endif; ?>
+                    <?php
+    endif;
+?>
                 </div>
             </div>
         </div>
-        <?php endif; ?>
+        <?php
+endif;
+?>
 
-        <div class="container">
-                    <?php  if($this->countModules('breadcrumbs')) : ?>
+
+                    <?php
+if ($this->countModules('breadcrumbs')):
+?>
                     <div id="breadcrumbs">        
                     <div class="row">
                     <jdoc:include type="modules" name="breadcrumbs" style="block" />
                 </div>
             </div>
-        <?php  endif; ?>
+        <?php
+endif;
+?>
 
         <div class="row">
             <div class="box">
                 <!-- content -->
-                <div class="col-xs-12 col-sm-<?php echo ($col1); ?> col-md-<?php echo ($col1); ?> col-lg-<?php echo ($col1); ?>">
+                <div class="col-xs-12 col-sm-<?php
+echo ($col1);
+?> col-md-<?php
+echo ($col1);
+?> col-lg-<?php
+echo ($col1);
+?>">
                     <jdoc:include type="message" />
                     <jdoc:include type="component" />
                 </div> 
-                <?php if ($this->countModules('sidebar')): ?>
+                <?php
+if ($this->countModules('sidebar')):
+?>
                <!-- sidebar -->
-                <div class="col-xs-12 col-sm-<?php echo ($col2); ?> col-md-<?php echo ($col2); ?> col-lg-<?php echo ($col2); ?>" id="sidebar">
+                <div class="col-xs-12 col-sm-<?php
+    echo ($col2);
+?> col-md-<?php
+    echo ($col2);
+?> col-lg-<?php
+    echo ($col2);
+?>" id="sidebar">
                     <div id="insidebar">
                       <jdoc:include type="modules" name="sidebar" style="xhtml" />
                     </div>
                 </div>
-                <?php endif; ?>
+                <?php
+endif;
+?>
            </div>
         </div>
-        <?php if ($this->countModules('bottom')): ?>
+        <?php
+if ($this->countModules('bottom')):
+?>
         <div class="row">
             <div class="box">
                 <!-- BOTTOM -->
                 <jdoc:include type="modules" name="bottom" style="xhtml" />
             </div>
         </div>
-        <?php endif; ?>
+        <?php
+endif;
+?>
     </div>
 
     <!-- /.container -->
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; <?php echo date('Y'); ?> - <?php echo $app->getCfg('sitename'); ?><p>Created by for Joomla!<a href="http://www.zonasitio.com" target="_blank"><h6>Alejandro Pascoli || ZonaSitio</h6></p>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <p>Copyright &copy;
+                    <?php echo date( 'Y'); ?> -
+                    <?php echo $app->getCfg('sitename'); ?>
+                </p>
+                <p>
+                    Created by for Joomla!
+                </p>
+                <h6>
+                    <a href="http://www.zonasitio.com" target="_blank">Alejandro Pascoli || ZonaSitio</a>
+                 </h6>
             </div>
         </div>
-        <footer class="text-center">
-    </footer>
+    </div>
+</footer>
     
     <jdoc:include type="modules" name="debug" />
         
