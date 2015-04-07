@@ -128,6 +128,38 @@ if ($this->countModules('slide') || $this->countModules('slogan')):
                     <?php
     endif;
 ?>
+        <?php
+    if ($this->countModules('user')):
+?>
+        <div class="row">
+            <div class="col-lg-3 text-center">
+                <div class="box">
+                    <!-- USER1 -->
+                    <jdoc:include type="modules" name="user1" style="xhtml" />
+                </div>
+            </div>
+            <div class="col-lg-3 text-center">
+                <div class="box">
+                    <!-- USER2 -->
+                    <jdoc:include type="modules" name="user2" style="xhtml" />
+                </div>
+            </div>
+            <div class="col-lg-3 text-center">
+                <div class="box">
+                    <!-- USER3 -->
+                    <jdoc:include type="modules" name="bottom3" style="xhtml" />
+                </div>
+            </div>
+            <div class="col-lg-3 text-center">
+                <div class="box">
+                    <!-- USER4 -->
+                    <jdoc:include type="modules" name="user4" style="xhtml" />
+                </div>
+            </div>
+        </div>
+        <?php
+    endif;
+?>
                     <?php
     if ($this->countModules('slogan')):
 ?>
@@ -193,9 +225,29 @@ endif;
 if ($this->countModules('bottom')):
 ?>
         <div class="row">
-            <div class="box">
-                <!-- BOTTOM -->
-                <jdoc:include type="modules" name="bottom" style="xhtml" />
+            <div class="col-lg-3 text-center">
+                <div class="box">
+                    <!-- BOTTOM1 -->
+                    <jdoc:include type="modules" name="bottom1" style="xhtml" />
+                </div>
+            </div>
+            <div class="col-lg-3 text-center">
+                <div class="box">
+                    <!-- BOTTOM2 -->
+                    <jdoc:include type="modules" name="bottom2" style="xhtml" />
+                </div>
+            </div>
+            <div class="col-lg-3 text-center">
+                <div class="box">
+                    <!-- BOTTOM3 -->
+                    <jdoc:include type="modules" name="bottom3" style="xhtml" />
+                </div>
+            </div>
+            <div class="col-lg-3 text-center">
+                <div class="box">
+                    <!-- BOTTOM4 -->
+                    <jdoc:include type="modules" name="bottom4" style="xhtml" />
+                </div>
             </div>
         </div>
         <?php
@@ -209,8 +261,12 @@ endif;
         <div class="row">
             <div class="col-lg-12 text-center">
                 <p>Copyright &copy;
-                    <?php echo date( 'Y'); ?> -
-                    <?php echo $app->getCfg('sitename'); ?>
+                    <?php
+echo date('Y');
+?> -
+                    <?php
+echo $app->getCfg('sitename');
+?>
                 </p>
                 <p>
                     Created by for Joomla!
