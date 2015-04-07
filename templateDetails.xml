@@ -34,11 +34,18 @@
 	<positions><!-- posiciones de modulos -->
 		<position>top</position>
 		<position>navbar</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
 		<position>breadcrumbs</position>
 		<position>slide</position>
 		<position>slogan</position>
 		<position>sidebar</position>
-		<position>bottom</position>
+		<position>bottom1</position>
+		<position>bottom2</position>
+		<position>bottom3</position>
+		<position>bottom4</position>
 		<position>debug</position>
 
 		<!-- posiciones ocultas grid gk5 -->
