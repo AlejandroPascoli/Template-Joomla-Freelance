@@ -467,7 +467,7 @@ footer .footer-below {
  letter-spacing: 3px;
  color: #fff;
  }
- .nav {
+.navbar-default .navbar-collapse {
     float: right;
 }
 .col-lg-3 {
