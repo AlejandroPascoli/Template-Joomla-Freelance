@@ -530,7 +530,7 @@ li a.mod-articles-category-title[href]:focus {
 }
 ul.tags.inline {
     margin: 0;
-    margin-bottom: 2px;
+    margin-bottom: 8px;
     padding: 0;
     list-style-type: none;
     display: flex;
@@ -544,6 +544,8 @@ ul.tags.inline {
 }
 ul.unstyled {
     list-style-type: none;
+    margin-left: -40px;
+    margin-top: 10px;
 }
 ul li.unstyled {
     margin: 0.5em 0;
@@ -705,7 +707,6 @@ input[type="radio"]{
   margin-left:10px;
 }
  
- 
 .forgot-label {
   font-size:0.8em;
   color:#7f8084;
@@ -713,4 +714,7 @@ input[type="radio"]{
   float:right;
   padding:3px 0;
   cursor:pointer;
+}
+a.jwDisqusArticleCounterLink, a.jwDisqusArticleCounterLink:hover {
+  margin-right: 10px;
 }

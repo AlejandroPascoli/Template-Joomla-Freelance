@@ -112,6 +112,17 @@ echo $app->getCfg('sitename');
     </nav>
 
     <div class="container">
+                    <?php
+if ($this->countModules('breadcrumbs')):
+?>
+                    <div id="breadcrumbs">        
+                    <div class="row">
+                    <jdoc:include type="modules" name="breadcrumbs" style="block" />
+                </div>
+            </div>
+        <?php
+endif;
+?>
         <?php
 if ($this->countModules('slide') || $this->countModules('slogan')):
 ?>
@@ -128,6 +139,7 @@ if ($this->countModules('slide') || $this->countModules('slogan')):
                     <?php
     endif;
 ?>
+
         <?php
     if ($this->countModules('user')):
 ?>
@@ -171,19 +183,6 @@ if ($this->countModules('slide') || $this->countModules('slogan')):
                 </div>
             </div>
         </div>
-        <?php
-endif;
-?>
-
-
-                    <?php
-if ($this->countModules('breadcrumbs')):
-?>
-                    <div id="breadcrumbs">        
-                    <div class="row">
-                    <jdoc:include type="modules" name="breadcrumbs" style="block" />
-                </div>
-            </div>
         <?php
 endif;
 ?>
