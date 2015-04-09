@@ -140,38 +140,55 @@ if ($this->countModules('slide') || $this->countModules('slogan')):
     endif;
 ?>
 
-        <?php
-    if ($this->countModules('user')):
+<?php
+if ($this->countModules('user1') || $this->countModules('user2') || $this->countModules('user3') || $this->countModules('user4')):
 ?>
-        <div class="row">
-            <div class="col-lg-3 text-center">
-                <div class="box">
-                    <!-- USER1 -->
-                    <jdoc:include type="modules" name="user1" style="xhtml" />
-                </div>
-            </div>
-            <div class="col-lg-3 text-center">
-                <div class="box">
-                    <!-- USER2 -->
-                    <jdoc:include type="modules" name="user2" style="xhtml" />
-                </div>
-            </div>
-            <div class="col-lg-3 text-center">
-                <div class="box">
-                    <!-- USER3 -->
-                    <jdoc:include type="modules" name="bottom3" style="xhtml" />
-                </div>
-            </div>
-            <div class="col-lg-3 text-center">
-                <div class="box">
-                    <!-- USER4 -->
-                    <jdoc:include type="modules" name="user4" style="xhtml" />
-                </div>
-            </div>
-        </div>
-        <?php
+                <!-- User Module Position
+                ================================================== -->  
+                <div id="user">
+                    <?php
+    if ($this->countModules('user1')):
+?>
+                    <div class="col-lg-3 text-center">
+                        <jdoc:include type="modules" name="user1" style="xhtml" />
+                    </div>
+                    <?php
     endif;
 ?>
+                    <?php
+    if ($this->countModules('user2')):
+?>
+                    <div class="col-lg-3 text-center">
+                        <jdoc:include type="modules" name="user2" style="xhtml" />
+                    </div>
+                    <?php
+    endif;
+?>
+                    <?php
+    if ($this->countModules('user3')):
+?>
+                    <div class="col-lg-3 text-center">
+                        <jdoc:include type="modules" name="user3" style="xhtml" />
+                    </div>
+                    <?php
+    endif;
+?>
+                </div>
+<?php
+    if ($this->countModules('user4')):
+?>
+                    <div class="col-lg-3 text-center">
+                        <jdoc:include type="modules" name="user4" style="xhtml" />
+                    </div>
+                    <?php
+    endif;
+?>
+                </div>
+                <?php
+endif;
+?>
+
+
                     <?php
     if ($this->countModules('slogan')):
 ?>
@@ -220,36 +237,52 @@ endif;
 ?>
            </div>
         </div>
-        <?php
-if ($this->countModules('bottom')):
+
+<?php
+if ($this->countModules('bottom1') || $this->countModules('bottom2') || $this->countModules('bottom3') || $this->countModules('bottom4')):
 ?>
-        <div class="row">
-            <div class="col-lg-3 text-center">
-                <div class="box">
-                    <!-- BOTTOM1 -->
-                    <jdoc:include type="modules" name="bottom1" style="xhtml" />
+                <!-- Bottom Module Position
+                ================================================== -->  
+                <div id="bottom">
+                    <?php
+    if ($this->countModules('bottom1')):
+?>
+                    <div class="col-lg-3 text-center">
+                        <jdoc:include type="modules" name="bottom1" style="xhtml" />
+                    </div>
+                    <?php
+    endif;
+?>
+                    <?php
+    if ($this->countModules('bottom2')):
+?>
+                    <div class="col-lg-3 text-center">
+                        <jdoc:include type="modules" name="bottom2" style="xhtml" />
+                    </div>
+                    <?php
+    endif;
+?>
+                    <?php
+    if ($this->countModules('bottom3')):
+?>
+                    <div class="col-lg-3 text-center">
+                        <jdoc:include type="modules" name="bottom3" style="xhtml" />
+                    </div>
+                    <?php
+    endif;
+?>
                 </div>
-            </div>
-            <div class="col-lg-3 text-center">
-                <div class="box">
-                    <!-- BOTTOM2 -->
-                    <jdoc:include type="modules" name="bottom2" style="xhtml" />
+<?php
+    if ($this->countModules('bottom4')):
+?>
+                    <div class="col-lg-3 text-center">
+                        <jdoc:include type="modules" name="bottom4" style="xhtml" />
+                    </div>
+                    <?php
+    endif;
+?>
                 </div>
-            </div>
-            <div class="col-lg-3 text-center">
-                <div class="box">
-                    <!-- BOTTOM3 -->
-                    <jdoc:include type="modules" name="bottom3" style="xhtml" />
-                </div>
-            </div>
-            <div class="col-lg-3 text-center">
-                <div class="box">
-                    <!-- BOTTOM4 -->
-                    <jdoc:include type="modules" name="bottom4" style="xhtml" />
-                </div>
-            </div>
-        </div>
-        <?php
+                <?php
 endif;
 ?>
     </div>
