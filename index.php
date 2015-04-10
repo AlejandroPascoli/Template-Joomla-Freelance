@@ -111,7 +111,7 @@ echo $app->getCfg('sitename');
         <!-- /.container -->
     </nav>
 
-    <div class="container">
+    <div class="container-fluid">
                     <?php
 if ($this->countModules('breadcrumbs')):
 ?>
@@ -289,7 +289,7 @@ endif;
 
     <!-- /.container -->
     <footer>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <p>Copyright &copy;
