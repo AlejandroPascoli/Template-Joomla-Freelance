@@ -718,3 +718,8 @@ input[type="radio"]{
 a.jwDisqusArticleCounterLink, a.jwDisqusArticleCounterLink:hover {
   margin-right: 10px;
 }
+.img-responsive, .thumbnail>img, .thumbnail a>img, .carousel-inner>.item>img, .carousel-inner>.item>a>img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
